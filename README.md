@@ -17,7 +17,7 @@
 
 ## Запуск
 
-    git clone <repo-url> && cd <repo>
+    git clone https://github.com/juw3x/devops-test-task.git && cd devops-test-task
     ./setup/01-install-nginx.sh
     ./setup/02-firewall.sh
     ./setup/03-healthcheck.sh
