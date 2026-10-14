@@ -11,3 +11,7 @@
 - Исправление: убрал `security.conf`, скрипт правит значение в `nginx.conf` через `sed`. Компромисс: файл принадлежит пакету, при обновлении возможен конфликт конфигурации.
 - Неточность в диагностике: я скрыл ошибки `nginx -T` через `2>/dev/null`, из-за чего вывод был пустым и причина не была видна.
 - UFW включён скриптом `setup/02-firewall.sh`: deny incoming, `limit 22/tcp`, `allow 80/tcp`, IPv4 и IPv6. Проверено: `ufw status verbose`, `ss -tlnp`, `curl localhost`.
+
+## Этап 3
+- Скрипт `scripts/check_page.sh` проверяет HTTP-код и текст страницы, пишет строку с ISO-датой в `/var/log/nginx-healthcheck/check.log`. Запуск раз в минуту через systemd timer, ротация через logrotate.
+- Проверено: ручной запуск (OK), остановка nginx (FAIL), автозапуск таймером.

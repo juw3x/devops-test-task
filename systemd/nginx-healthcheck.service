@@ -1,0 +1,11 @@
+[Unit]
+Description=Check Nginx test page availability
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/nginx-healthcheck
+LogsDirectory=nginx-healthcheck
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes

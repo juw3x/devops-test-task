@@ -1,0 +1,9 @@
+/var/log/nginx-healthcheck/check.log {
+    daily
+    rotate 14
+    compress
+    delaycompress
+    missingok
+    notifempty
+    create 0644 root root
+}
