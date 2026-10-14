@@ -1,0 +1,16 @@
+name: ci
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  lint-and-test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: ShellCheck
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y shellcheck
+          make lint
+      - name: Tests
+        run: make test
