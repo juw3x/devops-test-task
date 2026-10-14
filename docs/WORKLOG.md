@@ -15,3 +15,4 @@
 ## Этап 3
 - Скрипт `scripts/check_page.sh` проверяет HTTP-код и текст страницы, пишет строку с ISO-датой в `/var/log/nginx-healthcheck/check.log`. Запуск раз в минуту через systemd timer, ротация через logrotate.
 - Проверено: ручной запуск (OK), остановка nginx (FAIL), автозапуск таймером.
+- Принудительная ротация (`logrotate --force --verbose`): создан `check.log.1`, новый `check.log` (0644 root), после этого сервис продолжил писать в новый файл. `logrotate.timer` включён.

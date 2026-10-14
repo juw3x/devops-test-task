@@ -1,0 +1,8 @@
+2026-10-14T11:05:51+07:00 OK url=http://localhost/ http_code=200 time=0.002968s
+2026-10-14T11:06:01+07:00 OK url=http://localhost/ http_code=200 time=0.001091s
+2026-10-14T11:06:43+07:00 FAIL url=http://localhost/ http_code=000 time=0.000442s reason=curl_exit=7
+2026-10-14T11:06:55+07:00 OK url=http://localhost/ http_code=200 time=0.000864s
+2026-10-14T11:07:01+07:00 OK url=http://localhost/ http_code=200 time=0.000715s
+2026-10-14T11:08:01+07:00 OK url=http://localhost/ http_code=200 time=0.001124s
+2026-10-14T11:08:21+07:00 OK url=http://localhost/ http_code=200 time=0.000870s
+2026-10-14T11:09:01+07:00 OK url=http://localhost/ http_code=200 time=0.001141s
