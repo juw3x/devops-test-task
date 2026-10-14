@@ -1,5 +1,7 @@
 # nginx-healthcheck
 
+[![ci](https://github.com/juw3x/devops-test-task/actions/workflows/ci.yml/badge.svg)](https://github.com/juw3x/devops-test-task/actions/workflows/ci.yml)
+
 Тестовое задание DevOps: Nginx с простой страницей, firewall (UFW) с открытыми только SSH и HTTP, Bash-скрипт проверки доступности страницы с записью в лог.
 
 ## Структура
