@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# shellcheck disable=SC2317,SC2329
+# Функции вызываются косвенно через t(): shellcheck этого не видит.
 # Проверяет итоговое состояние сервера. Код выхода 0, если всё в порядке.
 set -uo pipefail
 sudo -v || exit 1

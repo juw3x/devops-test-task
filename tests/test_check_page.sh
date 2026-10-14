@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # Тесты scripts/check_page.sh на временном локальном веб-сервере (root не нужен).
 set -uo pipefail
-cd "$(dirname "${BASH_SOURCE[0]}")/.."
+cd "$(dirname "${BASH_SOURCE[0]}")/.." || exit 1
 
 SCRIPT=scripts/check_page.sh
 srv=""
